@@ -4,6 +4,8 @@ from collections import defaultdict, deque
 import hashlib
 import json
 
+"""This algorithm was discovered by my group members and me during project-based learning sessions. We created a maze game and realized that there was something missing in traditional path-finding algorithms."""
+
 class hierarchical_quantum_pathfinder:
     def __init__(self, maze, region_size=4, num_parallel_paths=3):
         """
