@@ -1,5 +1,0 @@
-include README.md
-include LICENSE
-recursive-include src/hqp *.py
-recursive-include tests *.py
-recursive-include examples *.py
