@@ -56,4 +56,3 @@ pathfinder.update_dynamic_obstacles([(3, 2), (4, 2)])
 
 # Set points to avoid
 pathfinder.set_points_to_avoid([(5, 3), (5, 2)])
-
