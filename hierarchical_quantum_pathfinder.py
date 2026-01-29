@@ -22,12 +22,10 @@ class hierarchical_quantum_pathfinder:
         self.num_parallel_paths = num_parallel_paths
         self.dynamic_obstacles = []
         self.points_to_avoid = []
-        
         # Region information
         self.regions = {}
         self.region_connections = {}
         self.path_cache = {}
-        
         # Initialize regions
         self._build_regions()
         self._identify_region_connections()
