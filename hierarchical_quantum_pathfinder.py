@@ -40,14 +40,12 @@ class hierarchical_quantum_pathfinder:
                 # Define region boundaries
                 x_end = min(x + self.region_size, self.width)
                 y_end = min(y + self.region_size, self.height)
-                
                 # Get all cells in the region
                 cells = []
                 for cy in range(y, y_end):
                     for cx in range(x, x_end):
                         if 0 <= cy < self.height and 0 <= cx < self.width and self.maze[cy, cx] == 0:
                             cells.append((cx, cy))
-                
                 if cells:  # Only create a region if it has navigable cells
                     # Calculate region center
                     center_x = sum(c[0] for c in cells) / len(cells)
